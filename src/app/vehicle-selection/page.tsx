@@ -7,7 +7,11 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return <VehicleSelectionPage />;
+  return (
+    <div className="px-5">
+      <VehicleSelectionPage />
+    </div>
+  );
 };
 
 export default page;

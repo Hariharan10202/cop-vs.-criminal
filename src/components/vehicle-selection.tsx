@@ -71,10 +71,15 @@ export default function VehicleSelectionPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-2xl font-bold mb-8">Select Vehicles for Each Cop</h1>
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <h1 className="text-2xl font-bold mb-8 text-center">
+        Select Vehicles for Each Cop
+      </h1>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="space-y-4 w-full sm:w-auto"
+      >
         {vehicleSelectData.map(({ key, label, image }) => (
-          <div key={key} className="flex flex-col w-[300px]">
+          <div key={key} className="flex flex-col w-full sm:w-[300px]">
             <SelectComponent
               name={key}
               control={control}

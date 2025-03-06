@@ -34,7 +34,7 @@ export default function SelectComponent<T extends FieldValues>({
       name={name}
       control={control}
       render={({ field }) => (
-        <div className="relative max-w-xs">
+        <div className="relative w-full">
           <Select
             key={name}
             className="w-full"

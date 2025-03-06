@@ -17,7 +17,7 @@ export default async function ResultPage() {
   const result = await checkCapture();
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen px-5">
       <h1 className="text-2xl font-bold mb-8">Game Result</h1>
       {result ? (
         <div className="flex flex-col items-center gap-y-4">
@@ -26,7 +26,7 @@ export default async function ResultPage() {
             The fugitive was captured by
           </p>
 
-          <div className="grid grid-cols-3 gap-x-6 gap-y-4 items-center">
+          <div className="grid sm:grid-cols-3 grid-cols-1 gap-x-6 gap-y-4 items-center">
             <div className="flex flex-col items-center">
               <p className="font-semibold">{result.name}</p>
               <div className="relative size-[100px]">

@@ -7,7 +7,11 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return <CitySelectionPage />;
+  return (
+    <div className="px-5">
+      <CitySelectionPage />
+    </div>
+  );
 };
 
 export default page;
