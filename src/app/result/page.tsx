@@ -6,6 +6,8 @@ import Link from "next/link";
 import { FaRepeat } from "react-icons/fa6";
 import { VscDebugStart } from "react-icons/vsc";
 
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: "Cop vs Criminal - Result",
   description: "Select cities for each cop before proceeding.",
