@@ -7,8 +7,12 @@ export default function Home() {
       <h1 className="text-4xl font-bold mb-8 text-center">
         Fugitive Capture Game
       </h1>
-      <Link href="/city-selection">
-        <Button size="lg" color="primary" className="font-semibold">
+      <Link href="/city-selection" passHref>
+        <Button
+          size="lg"
+          color="primary"
+          className="font-semibold w-full pointer-events-auto"
+        >
           <div className="flex items-center gap-x-2 group">
             <span className="text-xl">Start chase</span>
           </div>
