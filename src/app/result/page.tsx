@@ -1,11 +1,8 @@
 import { checkCapture } from "@/actions/game";
 import NextLink from "@/components/ui/NextLink";
-import { Button } from "@heroui/button";
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { FaRepeat } from "react-icons/fa6";
-import { VscDebugStart } from "react-icons/vsc";
 
 export const revalidate = 0;
 
