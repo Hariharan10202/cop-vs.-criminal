@@ -8,11 +8,7 @@ export default function Home() {
         Fugitive Capture Game
       </h1>
       <Link href="/city-selection" className="z-20">
-        <Button
-          size="lg"
-          color="primary"
-          className="font-semibold w-full pointer-events-none"
-        >
+        <Button size="lg" color="primary" className="font-semibold w-full z-0">
           <div className="flex items-center gap-x-2 group">
             <span className="text-xl">Start chase</span>
           </div>
