@@ -69,10 +69,10 @@ export default async function ResultPage() {
         </div>
       ) : (
         <div className="flex items-center flex-col">
-          <p className="text-red-500 font-bold text-2xl">
+          <p className="text-red-500 font-bold text-2xl text-center">
             The fugitive escaped!
           </p>
-          <p className="text-red-500 font-bold text-2xl">
+          <p className="text-red-500 font-bold text-2xl text-center">
             Re investigate may help to capture the criminal
           </p>
         </div>
@@ -85,7 +85,7 @@ export default async function ResultPage() {
             </Button>
           </Link>
         )}
-        <Link href="/">
+        <Link href="/" className="z-20">
           <Button
             color="primary"
             className="z-10"
