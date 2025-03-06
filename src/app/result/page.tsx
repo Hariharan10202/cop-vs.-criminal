@@ -79,12 +79,18 @@ export default async function ResultPage() {
       )}
       <div className="flex items-center gap-x-10 mt-10">
         {!result && (
-          <Link href="/result">
-            <Button endContent={<FaRepeat />}>Re investigate</Button>
+          <Link href="/result" className="z-20">
+            <Button className="z-10" endContent={<FaRepeat />}>
+              Re investigate
+            </Button>
           </Link>
         )}
         <Link href="/">
-          <Button color="primary" endContent={<VscDebugStart />}>
+          <Button
+            color="primary"
+            className="z-10"
+            endContent={<VscDebugStart />}
+          >
             Play Again
           </Button>
         </Link>
