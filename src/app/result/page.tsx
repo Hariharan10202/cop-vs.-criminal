@@ -1,4 +1,5 @@
 import { checkCapture } from "@/actions/game";
+import NextLink from "@/components/ui/NextLink";
 import { Button } from "@heroui/button";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -77,23 +78,15 @@ export default async function ResultPage() {
           </p>
         </div>
       )}
-      <div className="flex items-center gap-x-10 mt-10">
+      <div className="flex items-center flex-col sm:flex-row gap-10 mt-10">
         {!result && (
-          <Link href="/result" className="z-20">
-            <Button className="z-0" endContent={<FaRepeat />}>
-              Re investigate
-            </Button>
-          </Link>
+          <NextLink label="Re investigate" href="/result">
+            <FaRepeat />
+          </NextLink>
         )}
-        <Link href="/" className="z-20">
-          <Button
-            color="primary"
-            className="z-0"
-            endContent={<VscDebugStart />}
-          >
-            Play Again
-          </Button>
-        </Link>
+        <NextLink label="Play again" color="primary" href="/">
+          <FaRepeat />
+        </NextLink>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
-import { Button } from "@heroui/button";
-import Link from "next/link";
+import NextLink from "@/components/ui/NextLink";
 
 export default function Home() {
   return (
@@ -7,13 +6,7 @@ export default function Home() {
       <h1 className="text-4xl font-bold mb-8 text-center">
         Fugitive Capture Game
       </h1>
-      <Link href="/city-selection" className="z-20">
-        <Button size="lg" color="primary" className="font-semibold w-full z-0">
-          <div className="flex items-center gap-x-2 group">
-            <span className="text-xl">Start chase</span>
-          </div>
-        </Button>
-      </Link>
+      <NextLink label="Start chase" color="primary" href="/city-selection" />
     </div>
   );
 }
