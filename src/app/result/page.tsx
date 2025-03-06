@@ -80,7 +80,7 @@ export default async function ResultPage() {
       <div className="flex items-center gap-x-10 mt-10">
         {!result && (
           <Link href="/result" className="z-20">
-            <Button className="z-10" endContent={<FaRepeat />}>
+            <Button className="pointer-events-none" endContent={<FaRepeat />}>
               Re investigate
             </Button>
           </Link>
@@ -88,7 +88,7 @@ export default async function ResultPage() {
         <Link href="/" className="z-20">
           <Button
             color="primary"
-            className="z-10"
+            className="pointer-events-none"
             endContent={<VscDebugStart />}
           >
             Play Again
